@@ -1,0 +1,15 @@
+
+pt-BR:
+  activerecord:
+    models:
+      post: 'Publicação'
+      comment: 'Comentário'
+
+    attributes:
+      post:
+        title: 'Titulo'
+        author: 'Autor'
+        body: 'Conteúdo'
+      comment:
+        author: 'Autor'
+        body: 'Conteúdo'

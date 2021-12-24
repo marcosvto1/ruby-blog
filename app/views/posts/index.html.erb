@@ -1,0 +1,11 @@
+<% @posts.each do |post| %>
+  <%=  render 'post', post: post %>
+<% end %>
+
+<hr/>
+
+<div class="text-right">
+  <%= link_to 'Criar Novo Post', new_post_path, class: 'btn btn-success' %>
+</div>
+
+<!-- Alternative <%= render @posts >  -->
