@@ -4,6 +4,7 @@
 // that code so it'll be compiled.
 
 import Rails from "@rails/ujs"
+<<<<<<< HEAD
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 import 'bootstrap/dist/js/bootstrap.bundle'
@@ -16,4 +17,12 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 })
 
 Rails.start()
+=======
+import Turbolinks from "turbolinks"
+import * as ActiveStorage from "@rails/activestorage"
+import "channels"
+
+Rails.start()
+Turbolinks.start()
+>>>>>>> 47d91781e7abde379cf7c3c81b5a7b3970866780
 ActiveStorage.start()

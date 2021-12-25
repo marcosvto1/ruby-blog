@@ -14,9 +14,12 @@
 # ActiveSupport::Inflector.inflections(:en) do |inflect|
 #   inflect.acronym 'RESTful'
 # end
+<<<<<<< HEAD
 
 
 ActiveSupport::Inflector.inflections(:'pt-BR') do |inflect|
   inflect.plural 'Comentário', 'Comentários'
   inflect.plural 'resultado', 'resultados'
 end
+=======
+>>>>>>> 47d91781e7abde379cf7c3c81b5a7b3970866780
