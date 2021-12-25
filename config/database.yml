@@ -17,13 +17,10 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-<<<<<<< HEAD
   host: db
   user: postgres
   password: EcommerceOneBitCode
   port: 15432
-=======
->>>>>>> 47d91781e7abde379cf7c3c81b5a7b3970866780
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>

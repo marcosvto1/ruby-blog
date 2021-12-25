@@ -11,12 +11,9 @@ module Blog
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
 
-<<<<<<< HEAD
     config.i18n.default_locale = 'pt-BR'
     config.time_zone = 'Brasilia'
 
-=======
->>>>>>> 47d91781e7abde379cf7c3c81b5a7b3970866780
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
