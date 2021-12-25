@@ -22,11 +22,11 @@
           <%= form.hidden_field :post_id, value: @post.id %>
           <div class="form-group mb-2">
             <%= form.label :author %>
-            <%= form.text_field :author, class: 'form-control' %>
+            <%= form.text_field :author, class: 'form-control', required: true %>
           </div>
           <div class="form-group mb-2">
             <%= form.label :body  %>
-            <%= form.text_area :body, class: 'form-control', rows: 6 %>
+            <%= form.text_area :body, class: 'form-control', rows: 6, required: true %>
           </div>
           <%= form.submit class: 'btn btn-primary', data: { disable_with: 'Salvando..'} %>
         <% end %>
@@ -37,10 +37,14 @@
             <div class="col">
               <%= comment.author %>
             </div>
-            <div class="col text-right">
+            <div class="col text-end">
               <em data-bs-toggle="tooltip" data-bs-placement="right" title="<%= l comment.created_at, format: :long  %>"><%= time_ago_in_words comment.created_at %> atrás</em>
             </div>
           </div>
+
+          <hr/>
+
+          <%= sanitize(comment.body.gsub("\n", "<br/>")).html_safe %>
         </div>
       <% end %>
     </div>

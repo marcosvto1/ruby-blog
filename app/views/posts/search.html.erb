@@ -1,0 +1,10 @@
+<div class="text-muted">
+  <% if @posts.any? %>
+    <%= pluralize @posts.count, 'resultado' %> encontrados para <em><%= params[:q] %></em>
+  <% else %>
+    <h2>Nenhum Resultado encontrado</h2>
+  <% end %>
+</div>
+<% @posts.each do |post| %>
+  <%= render post %>
+<% end %>

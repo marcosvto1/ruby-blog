@@ -25,6 +25,8 @@ gem 'jbuilder', '~> 2.7'
 gem 'rails-i18n'
 
 gem 'pry'
+gem 'friendly_id'
+gem 'pg_search'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
